@@ -7,9 +7,9 @@ window.SITE = {
     /* ---------- LINKS ----------
        Replace these with your real booking links. */
     links: {
-        booking: "https://example.com/book", // "Book a discovery call" box
-        creative: "https://example.com/creative-director", // "Looking for a creative director?" box
-        cta: "https://example.com/book", // the floating "Book a content day now" button
+        booking: "https://calendly.com/tori-calamitymgmt", // "Book a discovery call" box
+        creative: "https://calendly.com/calamity_mgmt/30min", // "Looking for a creative director?" box
+        cta: "https://calendly.com/tori-calamitymgmt", // the floating "Book a content day now" button
     },
 
     /* ---------- WHAT WE MAKE ----------

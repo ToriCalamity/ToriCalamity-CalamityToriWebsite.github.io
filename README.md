@@ -62,9 +62,11 @@ Videos\
 - The thumbnail with the **same number** (`1.jpg`, `2.jpg`...) goes with that video. A thumbnail with no number is paired with any video left without one, and the script tells you when it has to guess.
 
 **To run it**
-1. Open this site folder in File Explorer, click the address bar at the top, type `powershell` and press Enter.
-2. Run: `powershell -ExecutionPolicy Bypass -File .\build-media.ps1`
-3. It prints what it found for each card. Then refresh the site (Ctrl+F5).
+1. Double-click **`build-media.bat`** in this folder. (If Windows warns you, choose "More info" then "Run anyway".)
+2. It prints what it found for each card. Wait for "Done", then press any key to close.
+3. Start the local server (section 1) and refresh the site (Ctrl+F5) to check it.
+
+(Prefer typing? Open PowerShell in this folder and run: `powershell -ExecutionPolicy Bypass -File .\build-media.ps1`)
 
 If your videos folder is somewhere else, add it on the end: `-Source "D:\your\folder"`.
 Run the script again whenever you add, replace or reorder videos. It copies them into `assets/videos` and `assets/posters`, and writes `media.js`.
@@ -103,7 +105,7 @@ Save your QR code image as **`assets/qr.png`** (replace the placeholder note). M
 | `index.html` | The page: hero text, desktop QR page, structure |
 | `styles.css` | All the design and colours |
 | `config.js` | Links, cards, FAQs (**edit this one**) |
-| `build-media.ps1` | Copies your videos/thumbnails in and links them to the cards |
+| `build-media.bat` / `build-media.ps1` | Double-click the .bat to run the script that copies your videos/thumbnails in and links them to the cards |
 | `media.js` | Made by the script above. Don't edit by hand |
 | `.nojekyll` | Empty file that tells GitHub Pages to serve the site as it is |
 | `app.js` | Behaviour (phone/desktop switch, card stack, videos, FAQs) |
