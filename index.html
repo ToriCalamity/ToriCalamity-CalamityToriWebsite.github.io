@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Calamity | Your New Content Partner</title>
+    <meta name="theme-color" content="#0B4A52" />
+
+    <!-- Fonts (Anton + Inter). To host them yourself, see the README. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Decides phone vs desktop BEFORE the page paints, so nothing flashes.
+         Add ?view=phone or ?view=desktop to the address to force either one when testing. -->
+    <script>
+        (function () {
+            var q = new URLSearchParams(location.search).get("view");
+            var ua = navigator.userAgent || "";
+            var mobileUA =
+                /Android.+Mobile|iPhone|iPod|Windows Phone|webOS|BlackBerry|Opera Mini|IEMobile/i.test(ua) ||
+                (navigator.userAgentData && navigator.userAgentData.mobile === true);
+            var smallTouch =
+                window.matchMedia && window.matchMedia("(max-width: 820px) and (pointer: coarse)").matches;
+            var view = q === "phone" || q === "desktop" ? q : mobileUA || smallTouch ? "phone" : "desktop";
+            document.documentElement.setAttribute("data-view", view);
+        })();
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- ============================================================
+         PHONE SITE (only shown on phones)
+         ============================================================ -->
+    <main id="phone-site">
+        <div class="phone">
+            <!-- HERO -->
+            <section class="hero">
+                <h1>
+                    <span>WELCOME</span>
+                    <span>TO YOUR NEW</span>
+                    <span>CONTENT PARTNER</span>
+                </h1>
+
+                <p class="hero-sub">At Calamity, we make ideas worth Watching</p>
+
+                <div class="mini-grid">
+                    <a class="mini-card" data-link="booking" target="_blank" rel="noopener noreferrer" aria-label="Book a discovery call">
+                        <div class="mini-title">BOOK A DISCOVERY CALL</div>
+                        <div class="mini-bottom">
+                            <div class="mini-text">Got something in mind? Let’s talk.</div>
+                            <span class="arrow-circle" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7H17V15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <a class="mini-card" data-link="creative" target="_blank" rel="noopener noreferrer" aria-label="Looking for a creative director?">
+                        <div class="mini-title">LOOKING FOR A&nbsp;CREATIVE DIRECTOR?</div>
+                        <div class="mini-bottom">
+                            <div class="mini-text">Book a call with our creative director.</div>
+                            <span class="arrow-circle" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7H17V15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="day-card">
+                    <h2>WHAT IS A CONTENT DAY?</h2>
+                    <div class="day-scroll-wrap">
+                        <div class="day-scroll" id="day-scroll" tabindex="0" role="region" aria-label="What is a content day?">
+                            <p>One session. A bank of content built for your business.</p>
+                            <p>A Content Day is dedicated social-first production built around what you need.</p>
+                            <p>We plan what we’re making, bring the Calamity production team, capture everything in one session, then take it through post-production and final delivery.</p>
+                            <p>Green screens, talking heads, vox pops, faceless, trends, skits, instructional, whatever makes sense for your business.</p>
+                            <p>No two Content Days look the same. We build the production around your business, your audience and the kind of content you actually need.</p>
+                        </div>
+                        <div class="day-fade" id="day-fade" aria-hidden="true">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WHAT WE MAKE -->
+            <section class="make">
+                <h2>WHAT WE MAKE</h2>
+                <div class="stack" id="stack"></div>
+            </section>
+
+            <!-- FAQS -->
+            <section class="faqs">
+                <h2>FAQs</h2>
+                <div class="faq-list" id="faq-list"></div>
+            </section>
+
+            <div class="footer-space"></div>
+
+            <!-- FLOATING BUTTON -->
+            <div class="cta-wrap">
+                <a class="cta" data-link="cta" aria-label="Book a content day now">
+                    <span class="cta-label">BOOK A CONTENT DAY NOW</span>
+                    <span class="cta-circle" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7H17V15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- ============================================================
+         DESKTOP PAGE (shown on computers instead of the website)
+         ============================================================ -->
+    <main id="desktop-site">
+        <div class="desk-card">
+            <div class="desk-left">
+                <svg width="40" height="66" viewBox="0 0 56 92" fill="none" aria-hidden="true">
+                    <rect x="3" y="3" width="50" height="86" rx="12" stroke="currentColor" stroke-width="5" />
+                    <rect x="20" y="10" width="16" height="5" rx="2.5" fill="currentColor" />
+                    <circle cx="28" cy="74" r="4" fill="currentColor" />
+                </svg>
+                <div class="desk-eyebrow">HOLD UP</div>
+                <h1>
+                    <span>PUT THE</span>
+                    <span>COMPUTER DOWN</span>
+                    <span>BOOMER</span>
+                </h1>
+                <p>This site is built for your phone. Scan the code with your phone's camera to open it.</p>
+            </div>
+
+            <div class="desk-right">
+                <div class="qr-box">
+                    <img src="assets/qr.png" alt="QR code to open the site on your phone" id="qr-img" />
+                </div>
+                <div class="qr-caption">SCAN TO VIEW ON YOUR PHONE</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="media.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
