@@ -136,7 +136,7 @@ window.SITE = {
         },
         {
             q: "Can you just edit content we’ve already filmed?",
-            a: "No. Our post-production is built around content produced by Calamity. We don’t offer editing-only services for externally.",
+            a: "No. Our post-production is built around content produced by Calamity. We don’t offer editing-only services for externally captured footage.",
         },
     ],
 };
